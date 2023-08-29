@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Moe's portfolio</title>
+
+
+</head>
+<script src="js/portfolio.js"></script>
+
+<body>
+
+    <!-- 独自のカーソル
+<div id="cursor" class="cursor"></div>
+ 
+動き確認用ボタン-->
+    <!-- <a href="#" class="btn">リンク</a> -->
+
+    <div id="header">
+        <div class="pro_menu">
+            <div class="pro_me">
+                <ul class="gnavi">
+                    <li class="current"><a href="#home_title">About me</a></li><!--現在地にはcurrentクラスを付ける-->
+                    <li><a href="#gallery">Works</a></li>
+                </ul>
+                <a href=""></a>
+            </div>
+            <div class="pro_works">
+                <a href=""></a>
+            </div>
+        </div>
+    </div>
+    <div id="me_title">
+
+        <div id="home_title">
+            <div class="home_letter">
+                <p>About me</p>
+            </div>
+            <div class="me_sub">
+                <p>私について</p>
+            </div>
+        </div>  
+    </div>
+        <div class="profile">
+            <div class="prof_top">
+                <div class="me_img">
+                    <img src="./img/moe.png" alt="">
+                </div>
+
+                <div class="profile_text">
+                    <div class="name_text">
+                        <div class="name">
+                            <div class="name_sub">
+                                <p>おおやま もえ</p>
+                            </div>
+
+                            <div class="name1">
+                                <p>大山 萌絵</p>
+                            </div>
+
+                        </div>
+                        <div class="prof_text">
+                            <p>ポートフォリオサイトを閲覧していただきありがとうございます！<br><br>神戸電子専門学校のグラフィックデザイン学科、WEB専攻です。<br>
+                                2004年3月15日生まれです。(満19歳)<br>神戸を中心に大阪でもWEBデザイナーを希望しています。<br><br>人と関わることが好きなのでアルバイトでは観光地の接客業に就き、<br>お客様の笑顔を増やせるよう心がけました。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="myskill">
+                <div class="skill_title">
+                    <p>Skill</p>
+                </div>
+                <div class="skill">
+                    <div class="skill1">
+                        <img src="img/ps.png" alt="Photoshop ">
+                        <div class="sk1_te">
+                            <p>Photoshop</p>
+                        </div>
+                    </div>
+                    <div class="skill2">
+                        <img src="img/ai.png" alt="Illustrator ">
+                        <div class="sk2_te">
+                            <p>Illustrator</p>
+                        </div>
+                    </div>
+                    <div class="skill3">
+                        <img src="img/vs.png" alt="Visual Studio Code ">
+                        <div class="sk3_te">
+                            <p>Visual Studio Code</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+    <div id="gallery_txt">
+        <p>works</p>
+    </div>
+    <div id="gallery">
+        <div class="gallery1">
+           <a href="promotion.html"><img src="img/content1.png" alt=""></a> 
+            <a href="moesite.html"><img src="img/content2.png" alt=""></a>
+            <a href="fischer's.html"><img src="img/content3.png" alt=""></a>
+        </div>
+        <div class="gallery2">
+            <a href="girl.html"><img src="img/content4.png" alt=""></a>
+            <a href="pokemon.html"><img src="img/content5.png" alt=""></a>
+            <a href="pokemon.html"><img src="img/content6.png" alt=""></a>
+        </div>
+    </div>
+   
+
+    <!-- <div class="area js-area">
+        <div class="wrap js-wrap">
+            <div class="item item04 js-item"><span><img src="img/content1.png" alt=""></span></div>
+            <div class="item item04 js-item"><span><img src="img/content2.png" alt=""></span></div>
+            <div class="item item04 js-item"><span><img src="img/content3.png" alt=""></span></div>
+            <div class="item item04 js-item"><span><img src="img/content4.png" alt=""></span></div>
+            <div class="item item04 js-item"><span><img src="img/content5.png" alt=""></span></div>
+            <div class="item item04 js-item"><span><img src="img/content6.png" alt=""></span></div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("load", function () {
+
+            //プラグインを定義
+            gsap.registerPlugin(ScrollTrigger);
+
+            const area = document.querySelector(".js-area");
+            const wrap = document.querySelector(".js-wrap");
+            const items = document.querySelectorAll(".js-item");
+            const num = items.length;
+
+            //横幅を指定
+            gsap.set(wrap, { width: num * 100 + "%" });
+            gsap.set(items, { width: 100 / num + "%" });
+
+            gsap.to(items, {
+                xPercent: -100 * (num - 1), //x方向に移動させる
+                ease: "none",
+                scrollTrigger: {
+                    trigger: area, //トリガー
+                    start: "top top", //開始位置
+                    end: "+=1000", //終了位置 スクロール量の調整
+                    pin: true, //ピン留め
+                    scrub: true, //スクロール量に応じて動かす
+                }
+            });
+        }); 
+    </script> -->
+
+
+    <div class="f_footer">
+        <p>@moeportfolio</p>
+    </div>
+</body>
+
+</html>
